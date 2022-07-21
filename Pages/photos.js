@@ -2,6 +2,8 @@
 
 //console.log(grid);
 
+// Work on arrays & tags
+
 grid.innerHTML =  `<img src="../Photos\Sunflower.jpg" alt="Sunflower">`;
 
 const imgArray = [

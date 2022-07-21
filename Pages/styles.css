@@ -1,29 +1,52 @@
+body
+{
+   background-color: lightyellow;
+   background-image: url(../Photos/nky_map_dayton.jpeg);
+   background-position: center;
+   background-repeat: no-repeat;
+   
+   font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+/*pages with background image need a box (semi-translucent?) behind text*/ 
+
+ }
+
+/*photos*/
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: column;
-    max-height: 100vh;
+    max-height: 85vh;
   }
   .cards img {
     margin: 10px;
     border: 3px solid #000;
     box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 23vw;
+    max-width: 27vw;
   }
 
   img:hover{
     filter: grayscale(100%);
  }
 
+ div {
+    display: none;
+    border:2px solid #000;
+    background-color: grey;
+    height: auto;
+    width:180px;
+    margin-left:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+a:hover + div {
+    display: block;
+}
  
- body
- {
-    background-color: tan;
-    background-image: url(../Photos/nky_map_dayton.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+
+/* Media Queries*/
 
 .desktop, 
 .print {
