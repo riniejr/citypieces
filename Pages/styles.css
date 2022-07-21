@@ -16,6 +16,15 @@
     filter: grayscale(100%);
  }
 
+ 
+ body
+ {
+    background-color: tan;
+    background-image: url(../Photos/nky_map_dayton.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
 .desktop, 
 .print {
     display: none;
