@@ -12,6 +12,10 @@
     max-width: 23vw;
   }
 
+  img:hover{
+    filter: grayscale(100%);
+ }
+
 .desktop, 
 .print {
     display: none;
