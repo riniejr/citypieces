@@ -24,7 +24,7 @@ body
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
     max-height: 85vh;
   }
 .cards img {
@@ -87,4 +87,5 @@ div {
 /*Footer*/
 footer {
     display: flex;
+    flex-direction: column;
 }
