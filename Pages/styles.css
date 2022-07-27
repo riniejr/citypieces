@@ -1,9 +1,9 @@
 body
 {
-   background-color: lightyellow;
-   background-image: url(../Photos/nky_map_dayton.jpeg);
-   background-position: center;
-   background-repeat: no-repeat;
+    background-color: lightyellow;
+    /*background-image: url('../Photos/nky_map_dayton.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;*/
    
    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
 /*pages with background image need a box (semi-translucent?) behind text*/ 

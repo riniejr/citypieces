@@ -1,4 +1,4 @@
-}const grid = document.getElementById("grid");
+ const grid = document.getElementById("grid");
 
 //console.log(grid);
 
