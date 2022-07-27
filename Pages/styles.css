@@ -4,6 +4,7 @@ body
     background-image: url('../Photos/nky_map_dayton.jpeg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: auto;
    
    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
 /*pages with background image need a box (semi-translucent?) behind text*/
@@ -23,9 +24,11 @@ body
 .cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: row;
-    max-height: 85vh;
+    /*max-height: 85vh;*/
+    max-height: 50 px;
+
   }
 .cards img {
     margin: 10px;
@@ -37,10 +40,6 @@ body
 img:hover{
     filter: grayscale(100%);
  }
-
-a:hover + div {
-    display: block;
-}
 
 div {
     display: none;
