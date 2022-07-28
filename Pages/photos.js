@@ -7,36 +7,36 @@
 grid.innerHTML =  `<img src="../Photos\Sunflower.jpg" alt="Sunflower">`;
 
 const imgArray = [
-    {
-        src: '../Photos\Sunflower.jpg'
-        alt: "Sunflower",
+    {   src: '../Photos\Sunflower.jpg'
+        _alt: "Sunflower",
+        get alt() {
+            return this._alt;
+        },
+        set alt(value) {
+            this._alt = value;
+        },
         tags: ["sunflower", "photo", "flower"]
     }, 
-    {   
-        src: 'Photos\Ducks.jpg'
+    {   src: 'Photos\Ducks.jpg'
         alt: "A mother duck and her ducklings swimming in the Licking River",
         tags: ["Covington", "photo", "duck"]
-    }
-    {
-        src: '../Photos\Sunflower.jpg'
+    },
+    {   src: '../Photos\Sunflower.jpg'
         alt: "Sunflower",
         tags: ["sunflower", "photo", "flower"]
     }, 
-    {   
-        src: '../Photos\Sunflower.jpg'
+    {   src: '../Photos\Sunflower.jpg'
         alt: "Sunflower",
         tags: ["sunflower", "photo", "flower"]
-    }
-    {   
-        src: '../Photos\Sunflower.jpg'
+    },
+    {   src: '../Photos\Sunflower.jpg'
         alt: "Sunflower",
         tags: ["sunflower", "photo", "flower"]
     }, 
-    {   
-        src: '../Photos\Sunflower.jpg'
+    {   src: '../Photos\Sunflower.jpg'
         alt: "Sunflower",
         tags: ["sunflower", "photo", "flower"]
-    }
+    },
 ];
 
 

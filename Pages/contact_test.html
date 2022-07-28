@@ -1,51 +1,27 @@
-<ul>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="photos.html">Photos</a>
-    <a href="contact.html">Contact</a>
-</ul>
+<html>
+    <head>
+        <title> Contact Form Design </title>
+        <link rel="stylesheet" type="text/css" href="contact.css">
+    </head>
+   
+    <body>
 
-<aside>
-    <h2>Contact</h2>
-    <form>
-        <div>
-            <label for="Name">Name</label>
-        </div>
-        <div>
-            <input id="Name" type="text"/>
-        </div>
-        <div>
-            <label for="email">Email</label>
-        </div>
-        <div>
-            <input id="email" type="email"/>
-        </div>
-        <div>
-            <label for="subject">Subject</label>
-        </div>
-        <div>
-            <select id="subject">Subject
-                <option>Question</option>
-                <option>Comment</option>
-                <option>Words of Wisdom</option>
-            </select>
-        </div>
-        <div>
-            <label for="msg">Message</label>
-        </div>
-        <div>
-            <textarea id="msg" rows="4"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Send Mail">
+        <div class="contact-title">
+            <h1>Say Hello</h1>
+            <h2>We are always ready to serve you!</h2>
         </div>
 
-    </form>
-</aside>
+        <div class="contact-form">
+                <form id="contact-form" method="post" action="">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <br>
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
 
+                    <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
 
+                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
 
-
-
-  <!-- Contact form box is missing? Still needs to be made "active".-->
-
+                </form>
+        </div>
+    </body>
+</html>
