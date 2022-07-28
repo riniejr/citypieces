@@ -2,3 +2,45 @@
 by the Cottingley Deepfakes, what chance do we mortals have? Soon our very reality will be dictated by the whims of Frances (9) and Elsie (16)." 
 alt="Deepfakes" srcset="//imgs.xkcd.com/comics/deepfakes_2x.png 2x" style="image-orientation:none">
 
+
+
+This is in the body--> <button onclick="mySunflowers()">Sunflower</button>
+<button onclick="myCities()">Cities</button>
+<main class="cards" id="grid">
+<div id="flowerPhotos">
+  <a><img src="../Photos/Sunflower.jpg" title="Sunflower"></a>
+  <div>Sunflower</div>
+  <a><img src="../Photos/Sunflower Mural Pan.jpg" title="Sunflower Mural"></a>
+  <div>Sunflower Mural</div>
+</div>
+<div id="cityPhotos">
+  <a><img src="../Photos/Paul Brown and Roebling.jpg" title="Roebling and Paul Brown Across the River"></a>
+  <div>Roebling Bridge & Paul Brown Stadium</div>
+</div>
+</main>
+
+
+
+
+
+7:20 PM
+Place this before your closing body tag--> <script>
+  function mySunflowers() {
+    var x = document.getElementById("flowerPhotos");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+  <script>
+    function myCities() {
+      var x = document.getElementById("cityPhotos");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
