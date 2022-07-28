@@ -4,12 +4,16 @@
     background-image: url("Photos\nky_map_dayton.jpeg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: stretch;
-   
-   font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+
+p {
+    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
 /*pages with background image need a box (semi-translucent?) behind text*/
 
- }
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -39,9 +43,6 @@
     background-color: #04AA6D;
     color: white;
   }
-  
-body
-
 
  /*Main Content*/
 
@@ -51,6 +52,12 @@ body
     display: flex;
  }
 
+ div.main {
+    width: 150px;
+    border: 1px solid #000000;
+    word-wrap: break-word;
+    }
+
 /*photos*/
 
 .cards {
@@ -59,9 +66,11 @@ body
     align-items: normal;
     flex-direction: column;
     justify-content: space-around;
+    row-gap: 10px;
+    column-gap: 2em;
     max-height: 50%;
-
   }
+
 .cards img {
     margin: 10px;
     border: 3px solid #000;
@@ -88,10 +97,6 @@ div {
     background-color: rgba(0,0,0,.5);
     color: #fff;
 }
-    
-
-
- 
 
 /* Media Queries*/
 
