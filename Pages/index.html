@@ -6,19 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>city pieces</title>
-
+    <link rel="stylesheet" type="text/css" href="../Pages/styles.css">
     <meta name="description" content="an exploration of NKY">
-    <meta name="author" content="Jess R"><main class="main">
-        
-<main class="main">
+    <meta name="author" content="Jess R">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+</head>
+
+<div class="topnav">
+    <a href="#home" class="active">Logo</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<body>
+
 
 
 
 <!--CSS-->
-<link rel="stylesheet" type="text/css" href="styles.css">
+
 
     <!--Navigation bar-->
-<aside>
+
+
+    <div class="topnav">
+        <a href="#home" class="active">Logo</a>
+        <!-- Navigation links (hidden by default) -->
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+<!--<aside>
     <ul>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -26,19 +59,18 @@
         <a href="contact.html">Contact</a>
       </ul>
 </aside>
+--->
 
-</head>
 
-<body>
+
+
     <h1>city pieces</h1>
     
     <!--<div class="desktop">Desktop</div>
     <div class="mobile">Mobile</div>
     <div class="print">Print</div>-->
-    
-    <header>
+<!--<main class="main">    
 
-    <main>
         <div class="aside">
         <aside>
             <img src="../Photos/Sunflower Mural Pan.jpg" alt="city pieces"/>
@@ -51,21 +83,32 @@
             </p>
         </article>
         </div>
-    </main>
 
-    </header>
 
+
+    -->
     <!--"Word Wrap" main section, <p> leaves too much space between lines.-->
-<p>
+<!--<p>
 
     </main>
 </p>
+-->
 
     
     <footer>
         <p>Newport, KY &copy; 2022 -- J Hart</p>
     </footer>
   
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    </script>
 </body>
   
 </html>

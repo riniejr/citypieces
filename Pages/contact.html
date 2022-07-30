@@ -22,16 +22,26 @@
 
         <div class="contact-form">
                 <form id="contact-form" method="post" action="">
-                <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+                <input id="name" name="name" type="text" class="form-box" placeholder="Your Name" required>
                 <br>
-                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                <input name="email" type="email" class="form-box" placeholder="Your Email" required><br>
 
-                    <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
+                    <textarea name="message" class="form-box" placeholder="Message" row="4" required></textarea><br>
 
-                    <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                    <input type="submit" onclick="concat()" class="form-control submit" value="SEND MESSAGE">
 
                 </form>
         </div>
+
+        <form>
+          
+          <script>
+              function concat() {
+              var nameInput = document.getElementById('name').value;
+            var confirm = 'Thank you, ' + nameInput + '!';
+            alert(confirm);
+          }
+          </script>
     </body>
 </html>
 </html>

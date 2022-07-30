@@ -46,6 +46,12 @@ form
     margin-bottom: 16px;
 }
 
+.form-box
+{
+    width: 600px;
+    
+}
+
 input
 {
     height: 45px;
