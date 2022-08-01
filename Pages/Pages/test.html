@@ -1,0 +1,77 @@
+
+
+This is in the body--> <button onclick="mySunflowers()">Sunflower</button>
+<button onclick="myCities()">Cities</button>
+<main class="cards" id="grid">
+<div id="flowerPhotos">
+  <a><img src="../Photos/Sunflower.jpg" title="Sunflower"></a>
+  <div>Sunflower</div>
+  <a><img src="../Photos/Sunflower Mural Pan.jpg" title="Sunflower Mural"></a>
+  <div>Sunflower Mural</div>
+</div>
+<div id="cityPhotos">
+  <a><img src="../Photos/Paul Brown and Roebling.jpg" title="Roebling and Paul Brown Across the River"></a>
+  <div>Roebling Bridge & Paul Brown Stadium</div>
+</div>
+</main>
+
+
+
+
+
+7:20 PM
+Place this before your closing body tag--> <script>
+  function mySunflowers() {
+    var x = document.getElementById("flowerPhotos");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+  <script>
+    function myCities() {
+      var x = document.getElementById("cityPhotos");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+
+
+
+<!--CSS-->
+
+
+    <!--Navigation bar-->
+
+
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <header id="mainheader">
+      <ul class="topnav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="photos.html">Photos</a>
+          <a href="contact.html">Contact</a>
+      </ul>
+      
+  </header>
+
+
+
