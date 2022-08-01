@@ -22,7 +22,7 @@ and eventually will add location tags, so that others can find and experience th
 I hope you enjoy perusing through the images and would love to hear (in the contact section!) of places you admire
 or like to visit just for the sake of the view, whether it's Northern Kentucky or Northern Ireland.
 
-Take the time to stop and take it all, you never know what you're missing.
+Take the time to stop and take it all in, you never know what you're missing.
 
 Cheers!
 
@@ -33,9 +33,9 @@ Wireframes: https://drive.google.com/file/d/1etCBCMLsp9VbPAbdKBRZYBwm5_SiF4vc/vi
 
 Media Queries:
 
-#1
+#1 Desktop - Line # in styles.css
 
-#2
+#2 Tablet (landscape & portrait) - Line #288 & #328 in styles.css
 
 CSS Features:
 
@@ -45,8 +45,7 @@ CSS Features:
 
 JavaScript Features:
 
-1. Contact Us form
+1. Contact Us form: see "Contact" page & line #131 in styles.css
 
 2. Array to sort images by tag
 
-If needed, any special instructions required for the reviewer to run your project.
