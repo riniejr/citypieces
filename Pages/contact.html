@@ -1,51 +1,72 @@
 <!DOCTYPE html>
-<html>
-  
-<ul>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="photos.html">Photos</a>
-  <a href="contact.html">Contact</a>
-</ul>
+<html lang="en">
 
-    <head>
-        <title> Contact Form Design </title>
-        <link rel="stylesheet" type="text/css" href="contact.css">
-    </head>
-   
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="contact-title">
+    <title>city pieces - contact</title>
+    
+    <link rel="stylesheet" type="text/css" href="../Pages/styles.css">
+    <meta name="description" content="an exploration of NKY">
+    <meta name="author" content="Jess R">
+</head>
+
+<header>
+    <nav>
+        <ul class="topnav">
+            <a href="index.html">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks"></div>
+            <a href="about.html">About</a>
+            <a href="photos.html">Photos</a>
+            <a href="contact.html" class="active">Contact</a>
+        </ul>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
+
+<body>
+    <div class="contact-title">
+        <form id="contact-title" method="post" action="">
             <h1>Say Hello</h1>
-            <h2>We are always ready to serve you!</h2>
-        </div>
-
-        <div class="contact-form">
-                <form id="contact-form" method="post" action="">
-                <input id="name" name="name" type="text" class="form-box" placeholder="Your Name" required>
+            <h2><I>I'd love to hear from you!</I></h2>
+                <form id="contact-title" method="post" action="">
+                <input id="name" name="name" type="text" class="form-control" placeholder="Your Name" required>
                 <br>
-                <input name="email" type="email" class="form-box" placeholder="Your Email" required><br>
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
 
-                    <textarea name="message" class="form-box" placeholder="Message" row="4" required></textarea><br>
+                <textarea name="message" class="form-control" placeholder="Comment, Question, or Suggestion..." row="4" required></textarea><br>
 
-                    <input type="submit" onclick="concat()" class="form-control submit" value="SEND MESSAGE">
+                <input type="submit" onclick="concat()" class="form-control submit" value="SEND MESSAGE">
+        </form>
+    </div>
+</body>
 
-                </form>
-        </div>
+<script>
+    function concat() {
+    var nameInput = document.getElementById('name').value;
+    var confirm = 'Thank you, ' + nameInput + '!';
+    alert(confirm);
+    }
 
-        <form>
-          
-          <script>
-              function concat() {
-              var nameInput = document.getElementById('name').value;
-            var confirm = 'Thank you, ' + nameInput + '!';
-            alert(confirm);
-          }
-          </script>
-    </body>
-</html>
-</html>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+    }
+</script>
 
 <footer>
-  <p>Newport, KY &copy; 2022 -- J Hart</p>
+  <p>NEWPORT, KY &copy; 2022 -- J HART</p>
 </footer>
+        
+</html>
+
