@@ -4,9 +4,9 @@
 
 // Work on arrays & tags
 
-grid.innerHTML =  `<img src="../Photos\Sunflower.jpg" alt="Sunflower">`;
+//grid.innerHTML =  `<img src="../Photos\Sunflower.jpg" alt="Sunflower">`;
 
-const imgArray = [
+//const imgArray = [
     {   src: '../Photos\Sunflower.jpg'
         _alt: "Sunflower",
         get alt() {
@@ -49,3 +49,5 @@ imgArray.map((img) => {
 grid.innerHTML = imgHTML;
 
 //filter array with textbox for tags element
+
+

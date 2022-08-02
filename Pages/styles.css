@@ -89,7 +89,7 @@ article {
 .topnav a:hover {
   background-color: #ddd;
   color: black;
-  }
+}
 
 .active {
   background-color: rgb(96, 189, 111);
@@ -128,15 +128,13 @@ nav>ul>li a {
   box-shadow: #000000;
   background-color: rgba(0,0,0,.8);
   color: #ffff;
-  box-sizing: content-box;
   width: fit-content;
-  padding: 10px 0 10px 0;
+  margin: 10px 20px 10px 80px;
+  padding: 20px 20px 10px 40px;
   text-align: center;
-  display: block;
   justify-content: center;
   align-items: center;
   font-size: 50px;
-  text-align: center;
   overflow-wrap: break-word;
   color: rgb(255, 255, 255);
   }
@@ -194,6 +192,11 @@ form {
   margin-bottom: 16px;
   }
 
+body {
+  background-image: url(../Photos/nky_map_1200.jpeg);
+  font-size: 80px;
+}
+
 .form-box {
   width: 30px;
   }
@@ -247,135 +250,85 @@ form .submit:hover {
 .col-11 {width: 80%;}
 .col-12 {width: 70%;}*/
 
-.footer {
+/*Media Queries*/
+/*Desktop*/
+@media only screen and (min-width: 800px) {
+
+.body {
+  background-image: url(../Photos/nky_map_1200.jpeg);
+  } 
+
+.contact-title {
+  width: 100%;
+  }
+
+.grid-container {
+  width: 100%
+  }
+
+.column {
+  float: left;
+  width: 25%;
+  }
+
+.icon {
   display: none;
 }
 
-/* Media Queries*/
-/*Tablets*/
 
-@media only screen and (min-width: 768px) {
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    }
-  .cell {
-    width: 50%
-    }
-
-  body {
-    background-image: url(../Photos/nky_map_1200.jpeg);
-    font-size: 80px;
-  }
-
-  .box1 {
-    box-shadow: #000000;
-    background-color: rgba(0,0,0,.8);
-    color: #ffff;
-    box-sizing: content-box;
-    width: 80%;
-    padding: 0px;
-    }
+/*Tablet*/
+@media only screen and (min-width: 992px) {
   
-  p {
-    font-size: large;
-    text-align: center;
-    overflow-wrap: break-word;
-    color: rgb(255, 255, 255);
-    }
-
-  .form-control {
-    width: fit-content;
-    background: lightgrey;
-    border-bottom: 1px solid gray;
-    color: black;
-    font-size: 50px;
-    margin-bottom: 16px;
-    }
-  }
-
- /*Desktops & Laptops*/
- @media only screen and (min-width: 600px) {
-
-  .body {
-    background-image: url(../Photos/nky_map_1200.jpeg);
+  .responsive-image {
+    width: 100%;
     } 
 
-  .contact-title {
-    width: 100%;
-    }
-
-  .responsive-image {
-    width: 800px;
-    }
-
   .column {
-    float: left;
-    width: 33.33%;
-    }
-  
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-
-  .grid-container {
-    display: contents;
-    flex-direction: row;
-    flex: 50%;
-    justify-content:baseline;
-    row-gap: 1px;
-    column-gap: 2px;
-    }
-  
-    /*.cards img {
-      margin: 10px 5px 10px 10px;
-      padding: 5%;
-      border: 3px solid #000;
-      box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
-      }*/
-
-  .button1 {
-    background-color: #9e180e;
-    color: white;
-    padding: 2px 40px 15px 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    margin: 450px auto 35px auto;
-    border-width: 5px;
-    border-style: solid;
     width: 50%;
-    height: 200px
-    }
-  
-  .button1:hover {
-    color: white;
-    background-color: #b13b0d;
-    cursor: pointer;
-    }
+  }
 
-    /*@media only screen and (min-width: 768px) {
-      .col-1 {width: 100%;}
-      .col-2 {width: 100%;}
-      .col-3 {width: 100%;}
-      .col-4 {width: 100%;}
-      .col-5 {width: 100%;}
-      .col-6 {width: 100%;}
-      .col-7 {width: 100%;}
-      .col-8 {width: 100%;}
-      .col-9 {width: 100%;}
-      .col-10 {width: 100%;}
-      .col-11 {width: 100%;}
-      .col-12 {width: 100%;}
-    }*/
+  .icon {
+    display: inline;
+  }
+
+  /*Footer*/
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  display: inline-grid;
+  border-radius: 10px; 
+  background-color: rgba(0,0,0,.7); 
+  padding: 20px; 
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+    }
+  }
+
+.button1 {
+  background-color: #9e180e;
+  color: white;
+  padding: 2px 40px 15px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  margin: 450px auto 35px auto;
+  border-width: 5px;
+  border-style: solid;
+  width: 50%;
+  height: 200px
+  }
+
+.button1:hover {
+  color: white;
+  background-color: #b13b0d;
+  cursor: pointer;
   }
 
 /*Footer*/
@@ -393,4 +346,5 @@ footer {
   bottom: 0;
   left: 0;
   text-align: center;
+    }
   }

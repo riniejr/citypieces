@@ -1,0 +1,26 @@
+JavaScript below topnav
+
+<div id="mylinks"
+
+js mobile nav bar @ w3schools
+index & css
+
+.topnav #mylinks {
+display: none;
+(hides until mobile size)
+
+head v header
+header - nav HTML
+head - METADATA & stylesheets
+
+<script>
+	function concat() {
+	var nameInput = document.getElementById('name').value;
+
+media query: width 1200
+
+hide footer in mobile?
+@media screen and ()
+
+mobile nav only on about.html,
+add to other pages
