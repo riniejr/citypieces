@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,106 +10,46 @@
     <link rel="stylesheet" type="text/css" href="../Pages/styles.css">
     <meta name="description" content="an exploration of NKY">
     <meta name="author" content="Jess R">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
 </head>
 
-<div class="topnav">
-    <a href="#home" class="active">Logo</a>
-    <!-- Navigation links (hidden by default) -->
-    <div id="myLinks">
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-<body>
-
-
-
-
-<!--CSS-->
-
-
-    <!--Navigation bar-->
-
-
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
+<header>
+    <nav>
+        <ul class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks"></div>
+            <a href="about.html">About</a>
+            <a href="photos.html">Photos</a>
+            <a href="contact.html">Contact</a>
+        </ul>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+        <i class="fa fa-bars"></i>
         </a>
-      </div>
+    </nav>
+</header>
 
-<!--<aside>
-    <ul>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="photos.html">Photos</a>
-        <a href="contact.html">Contact</a>
-      </ul>
-</aside>
---->
-
-
-
-
-    <h1>city pieces</h1>
-    
-    <!--<div class="desktop">Desktop</div>
-    <div class="mobile">Mobile</div>
-    <div class="print">Print</div>-->
-<!--<main class="main">    
-
-        <div class="aside">
-        <aside>
-            <img src="../Photos/Sunflower Mural Pan.jpg" alt="city pieces"/>
-        </aside>
-        <article>
-            <img src="../Photos/Old & New.jpg" class="banner" alt="city pieces">
-            <h1>views of nky</h1>
-            <p class="subtitle">
-
-            </p>
-        </article>
-        </div>
-
-
-
-    -->
-    <!--"Word Wrap" main section, <p> leaves too much space between lines.-->
-<!--<p>
-
-    </main>
-</p>
--->
-
-    
-    <footer>
-        <p>Newport, KY &copy; 2022 -- J Hart</p>
-    </footer>
-  
-    <script>
-        function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-    </script>
+<body>
+    <div class="center">
+        <a href="photos.html" class="button1">city pieces</a>
+    </div>
 </body>
-  
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    }  
+    else {
+    x.style.display = "block";
+    }
+}
+</script>
+
+<footer>
+    <p>NEWPORT, KY &copy; 2022 -- J HART</p>
+</footer>
+
 </html>
