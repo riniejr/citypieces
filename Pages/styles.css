@@ -1,227 +1,396 @@
-/*Stylesheet*/
+/*Main Area*/
+
+html, body {
+  height: 100%;
+}
 
 body {
-    background-image: url("../Photos/nky_map_dayton.jpeg");
-    background-color: lightyellow;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 130%;
+  margin-top: 0px;
+  font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
+  min-height: 100%;
+  position: relative;
+  background-color: lightyellow;
+  background-size: cover;
+  background-image: url(../Photos/nky_map_1200\ -\ scaled.jpeg);
+  background-repeat: repeat;
 }
 
-/*Text*/
+.button1 {
+  background-color: #b13b0d;
+  color: white;
+  padding: 2px 40px 15px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  margin: 250px auto 35px auto;
+  border-width: 5px;
+  border-style: solid;
+  width: 75%;
+  height: 300px;
+  }
+
+.button1:hover {
+  background-color: white;
+  color: #b13b0d;
+  cursor: pointer;
+  }
+
+article {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 20%;
+  max-width: 200px;
+  height: auto;
+  background-color: rgba(0,0,0,.5);
+  color: #ffff;
+  }
+
+
+/*Top Menu*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 2px;
+  padding: 5px
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  font-weight: bold;
+  padding: 5px 16px 7px;
+  text-decoration: none;
+  font-size: 24px;
+  display: block;
+  }
+
+.topnav a.icon {
+  background: rgb(96, 189, 111);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  }
+
+.active {
+  background-color: rgb(96, 189, 111);
+  color: white;
+  }
+
+nav>ul {
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  } 
+
+nav>ul>li:nth-child(1) {
+  flex-grow: 1;
+  } 
+
+nav>ul>li {
+  float: left;
+  } 
+
+nav>ul>li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: larger;
+  }
+  
+
+/*About*/
 
 .box1 {
-    box-shadow: #000000;
-    background-color: rgba(0,0,0,.5);
-    color: #ffff;
-    box-sizing: content-box;
-}
-
-p {
-    font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
-    font-size: medium;
-    overflow-wrap: break-word;
-    color: black; 
-}
-
-/*pages with background image need a box (semi-translucent?) behind text*/
-
-
-/* Style the navigation menu */
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+  box-shadow: #000000;
+  background-color: rgba(0,0,0,.8);
+  color: #ffff;
+  box-sizing: content-box;
+  width: fit-content;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  text-align: center;
+  overflow-wrap: break-word;
+  color: rgb(255, 255, 255);
   }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  }
-
- /*Main Content*/
 
  /*Contact*/
+ /*How to center form??*/
 
- body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: linear-gradient(rgba(0, 0, 50, 0.5), rgba(0, 0, 50, 0.5)), url(../Photos/nky_map_dayton.jpeg);
-    background-size: 110%;
-    background-position: center;
-    font-family: sans-serif;
-    repeat: no-repeat
-}
+.section {
+    position: absolute;
+  }
 
-.contact-title
-{
-    margin-top: 100px;
-    color: #fff;
-    text-transform: uppercase;
-    transition: all 3s ease-in-out;
-}
+.bg-image {
+  opacity: 0.7;
+  }
 
-.contact-title h1
-{
-    font-size: 32px;
-    line-height: 10px;
-}
+.bg-img-title {
+  position: absolute;
+  top: 420px;
+  left: 20px;
+  }
 
-.contact-title h2 
-{
-    font-size: 16px;
-}
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+  }
 
-form
-{
-    margin-top: 50px;
-    transition: all 4s ease-in-out;
-}
+.contact-title h1 {
+  font-size: 90%;
+  line-height: 5px;
+  text-align: center;
+  }
 
-.form-control
-{
-    width: 600px;
-    background: transparent;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid gray;
-    color: #fff;
-    font-size: 18px;
-    margin-bottom: 16px;
-}
+.contact-title h2 {
+  font-size: 25px;
+  text-align: center;
+  }
 
-input
-{
-    height: 45px;
-}
+form {
+  display: inline-grid;
+  flex-direction: column;
+  color:#fff;
+  border-radius: 10px; 
+  background-color: rgba(0,0,0,.7); 
+  padding: 20px; 
+  }
 
-form .submit
-{
-    background: darkred;
-    border-color: transparent;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    height: 50px;
-    margin-top: 20px;
-}
+.form-control {
+  width: fit-content;
+  background: lightgrey;
+  border-bottom: 1px solid gray;
+  color: black;
+  font-size: 25px;
+  margin-bottom: 16px;
+  }
 
-form .submit:hover
-{   
-    background-color: #f44336;
-    cursor: pointer;
-}
+.form-box {
+  width: 30px;
+  }
 
- .mainContent {
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
- }
+input {
+  height: 45px;
+  }
 
- div.main {
-    width: 150px;
-    border: 1px solid #000000;
-    word-wrap: break-word;
- }
+form .submit {
+  background: darkred;
+  border-color: transparent;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 10px;
+  }
+
+form .submit:hover {   
+  background-color: #f44336;
+  cursor: pointer;
+  }
+  
 
 /*photos*/
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: normal;
-    flex-direction: column;
-    justify-content: space-around;
-    row-gap: 10px;
-    column-gap: 2em;
-    max-height: 60%;
+.grid-container {
+  display: contents;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 5px 0 5px;
   }
 
-.cards img {
-    margin: 10px;
-    border: 3px solid #000;
-    box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
-    max-width: 70%;
-  }
+.responsive-image {
+  margin: 5px;
+  width: 100%;
+  } 
 
-img:hover{
-    filter: grayscale(100%);
- }
+/*.col-1 {width: 75%;}
+.col-2 {width: 50%;}
+.col-3 {width: 50%;}
+.col-4 {width: 80%;}
+.col-5 {width: 70%;}
+.col-6 {width: 70%;}
+.col-7 {width: 70%;}
+.col-8 {width: 70%;}
+.col-9 {width: 75%;}
+.col-10 {width: 80%;}
+.col-11 {width: 80%;}
+.col-12 {width: 70%;}*/
 
-/*div {
-    display: none;
-    border:2px solid #000;
-    background-color: grey;
-    height: auto;
-    width:180px;
-    margin-left:10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}*/
+.footer {
+  display: none;
+}
 
 /* Media Queries*/
+/*Tablets*/
 
-.desktop, 
-.print {
-    display: none;
-}
-
-@media print {
-    .mobile, 
-    .desktop {
-        display: none;
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     }
-}
-
-    .print {
-        display: block;
+  .cell {
+    width: 50%
     }
 
-@media screen and (min-width: 768px) {
-    .mobile {
-        display: none;
+  body {
+    background-image: url(../Photos/nky_map_1200.jpeg);
+    font-size: 80px;
+  }
+
+  .box1 {
+    box-shadow: #000000;
+    background-color: rgba(0,0,0,.8);
+    color: #ffff;
+    box-sizing: content-box;
+    width: 80%;
+    padding: 0px;
+    }
+  
+  p {
+    font-size: large;
+    text-align: center;
+    overflow-wrap: break-word;
+    color: rgb(255, 255, 255);
     }
 
-    .desktop {
-        display: block;
+  .form-control {
+    width: fit-content;
+    background: lightgrey;
+    border-bottom: 1px solid gray;
+    color: black;
+    font-size: 50px;
+    margin-bottom: 16px;
     }
-}
+  }
+
+ /*Desktops & Laptops*/
+ @media only screen and (min-width: 600px) {
+
+  .body {
+    background-image: url(../Photos/nky_map_1200.jpeg);
+    } 
+
+  .contact-title {
+    width: 100%;
+    }
+
+  .responsive-image {
+    width: 800px;
+    }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+  .grid-container {
+    display: contents;
+    flex-direction: row;
+    flex: 50%;
+    justify-content:baseline;
+    row-gap: 1px;
+    column-gap: 2px;
+    }
+  
+    /*.cards img {
+      margin: 10px 5px 10px 10px;
+      padding: 5%;
+      border: 3px solid #000;
+      box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3);
+      }*/
+
+  .button1 {
+    background-color: #9e180e;
+    color: white;
+    padding: 2px 40px 15px 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    margin: 450px auto 35px auto;
+    border-width: 5px;
+    border-style: solid;
+    width: 50%;
+    height: 200px
+    }
+  
+  .button1:hover {
+    color: white;
+    background-color: #b13b0d;
+    cursor: pointer;
+    }
+
+    /*@media only screen and (min-width: 768px) {
+      .col-1 {width: 100%;}
+      .col-2 {width: 100%;}
+      .col-3 {width: 100%;}
+      .col-4 {width: 100%;}
+      .col-5 {width: 100%;}
+      .col-6 {width: 100%;}
+      .col-7 {width: 100%;}
+      .col-8 {width: 100%;}
+      .col-9 {width: 100%;}
+      .col-10 {width: 100%;}
+      .col-11 {width: 100%;}
+      .col-12 {width: 100%;}
+    }*/
+  }
 
 /*Footer*/
 footer {
-    display: flex;
-    flex-direction: column;
-}
+  display: flex;
+  flex-direction: column;
+  color: white;
+  display: inline-grid;
+  border-radius: 10px; 
+  background-color: rgba(0,0,0,.7); 
+  padding: 20px; 
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  }
