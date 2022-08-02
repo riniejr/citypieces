@@ -49,6 +49,14 @@
 </body>
 
 <script>
+    function validateForm() {
+    if (!validateName() || !validatePhone() || !validateEmail() || !validateMessage()) {
+    jsShow('submit-error');
+    producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+    setTimeout(function(){jsHide('submit-error');}, 2000);
+    return false;
+    }
+    
     function concat() {
     var nameInput = document.getElementById('name').value;
     var confirm = 'Thank you, ' + nameInput + '!';
