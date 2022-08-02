@@ -33,19 +33,19 @@ Wireframes: https://drive.google.com/file/d/1etCBCMLsp9VbPAbdKBRZYBwm5_SiF4vc/vi
 
 Media Queries:
 
-#1 Desktop - Line # in styles.css
+#1 Desktop - Line #254 in styles.css
 
-#2 Tablet (landscape & portrait) - Line #288 & #328 in styles.css
+#2 Tablet - Line #288 & #279 in styles.css
 
 CSS Features:
 
-1. "Hamburger" navigation menu: 
+1. "Hamburger" navigation menu
 
-2. Flexbox to organize photo layout:
+2. Flexbox to organize photo layout
 
 JavaScript Features:
 
-1. Contact Us form: see "Contact" page & line #131 in styles.css
+1. Contact Us form: see "Contact" page & line #142 in styles.css
 
-2. Array to sort images by tag
+xx2. Array to sort images by tagxx (maybe in the near future)
 
