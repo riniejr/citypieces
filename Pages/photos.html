@@ -1,68 +1,100 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<ul>
-  <a href="index.html">Home</a></li>
-  <a href="about.html">About</a></li>
-  <a href="photos.html">Photos</a></li>
-  <a href="contact.html">Contact</a></li>
-</ul>
+  <title>city pieces</title>
+  <link rel="stylesheet" type="text/css" href="../Pages/styles.css">
+  <meta name="description" content="an exploration of NKY">
+  <meta name="author" content="Jess R">
+</head>
 
-<header>
-  <h1>Photos</h1>
-  
-  <!--<img src="" />-->
-
+<header id="mainheader">
+    <nav>
+        <ul class="topnav">
+            <a href="index.html">Home</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks"></div>
+            <a href="about.html">About</a>
+            <a href="photos.html" class="active">Photos</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </nav>
 </header>
+      
+<body>
+    <div class="grid-container">
+      <div class="row">
+        <div class="column">
+          <img src="../Photos/Covington Mural Birds.jpg" class="responsive-image" title="Covington Birds Mural">
+        </div>
 
-<!-- Photos need to be "wrapped" (made responsive) and limited to the width of the webpage.
-BES photo needs to be enlarged.-->
-
-<link rel="stylesheet" type="text/css" href="styles.css">
-
-<main class="cards" id="grid">
-  <a><img src="../Photos/Sunflower Mural Pan.jpg" title="Sunflower Mural"></a>
-  <div>Sunflower Mural</div>
-
-  <a><img src="../Photos/Covington Mural Birds.jpg" title="Covington Birds Mural"></a>
-  <div>Bird Mural</div>
-
-  <a><img src="../Photos/Cov Farmer.jpg" title="Covington Farmer Mural"></a>
-  <div>Farmer</div>
-
-  <a><img src="../Photos/Bottles at Molly Malone's.jpg" title="Bottles @ Molly Malone's"></a>
-  <div>Bottles @ Molly Malone's</div>
-
-  <a><img src="../Photos/Young Black-Eye Susan.jpg" title="Black-Eyed Susan"></a>
-
-  <a><img src="../Photos/Old & New.jpg" title="Old & New"></a>
-  <div>Old & New</div>
-
-  <a href="https://tristatetrails.org/trail/licking-river-greenway-trail/"> <img src="../Photos/Licking River Trailhead.jpg" title="Trail Head"></a>
-  <div>Licking River Trailhead</div>
-
-  <a><img src=".." title="Sunflower" title="Sunflower"></a>
-  <div>Sunflower</div>
-
-  <a href="https://instagram.com/joshuastoutart/"> <img src="../Photos/Feed Me.png" title="FEED ME (@joshuastoutart)"></a>
-  <div>Feed Me</div>
-
-  <a href="http://www.atthegruff.com/"> <img src="../Photos/Trip Trap.jpg" title="Trip Trap @ The Gruff"></a>
-  <div>Trip Trip @ The Gruff</div>
-
-  <a><img src="../Photos/Flowers on the Balcony.jpg" title="Balcony Garden"></a>
-  <div>Balcony Garden</div>
+        <div class="column">
+          <img src="../Photos/Cov Farmer.jpg" class="responsive-image" title="Covington Farmer Mural">
+        </div>
   
+        <div class="column">
+          <a href="https://tristatetrails.org/trail/licking-river-greenway-trail/" target="_blank" rel="noopener noreferrer"> <img src="../Photos/Licking River Trailhead.jpg" class="responsive-image" title="Trail Head"></a>
+        </div>
 
-</main>
+        <div class="column">
+          <img src="../Photos/Bottles at Molly Malone's.jpg" class="responsive-image" title="Bottles @ Molly Malone's">
+        </div>
 
-<script src="./photos.js"> </script>
+        <div class="column">
+          <img src="../Photos/Young Black-Eye Susan.jpg" class="responsive-image" title="Black-Eyed Susan">
+          </div>
 
-    <footer>
-      <p>Newport, KY &copy; 2022 -- J Hart</p>
-    </footer>
+        <div class="column">
+          <a href="http://www.atthegruff.com/" target="_blank" rel="noopener noreferrer"> <img src="../Photos/Trip Trap.jpg" class="responsive-image" title="Trip Trap @ The Gruff"></a>
+        </div>
 
+        <div class="column">
+          <img src="../Photos/Old & New.jpg" class="responsive-image" title="Old & New">
+        </div>
+
+        <div class="column">
+          <a><img src="../Photos/Sunflower.jpg" class="responsive-image" title="Sunflower"></a>
+        </div>
+
+        <div class="column">
+          <a href="https://instagram.com/joshuastoutart/" target="_blank" rel="noopener noreferrer"> <img src="../Photos/Feed Me.png" class="responsive-image" title="FEED ME (@joshuastoutart)"></a>
+        </div>
+
+        <div class="column">
+          <img src="../Photos/Flowers on the Balcony.jpg" class="responsive-image" title="Balcony Garden">
+        </div>
+
+        <div class="column">
+          <img src="../Photos/Green Sunflower.jpg" class="responsive-image" title="Budding Sunflower">
+        </div>
+
+        <div class="column">
+          <img src="../Photos/Sunflower Mural Pan.jpg" class="responsive-image" title="Sunflower Mural">
+        </div>
+    </div>
+    <!--<a href src="./photos.js">-->
 </body>
 
-</html>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    }
+  }
+</script>
+
+<footer>
+  <p>NEWPORT, KY &copy; 2022 -- J HART</p>
+</footer>
+
+ </html>
