@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
+    <title>city pieces</title>
+    <link rel="stylesheet" type="text/css" href="../Pages/styles.css">
+    <meta name="description" content="an exploration of NKY">
 
-    <body>
+</head>
 
-        <div class="topnav">
-            <a href="#home" class="active">Logo</a>
-            <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>
-
-        <ul>
+<header>
+    <nav>
+        <ul class="topnav">
             <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks"></div>
+            <a href="about.html" class="active">About</a>
             <a href="photos.html">Photos</a>
             <a href="contact.html">Contact</a>
         </ul>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+</header>
 
-        <h1>About</h1>
-            <element class="box box1">I am a transplant from Northern Indiana, and have recently started calling NKY home.
-                A great deal of my time is spent admiring the architechture and the history of this area;
-                it's so incredibly different from back home.
-                I created this page as a way to display my favorite pieces of NKY.
-    <footer>
-        <p>Newport, KY &copy; 2022 -- J Hart</p>
-    </footer>
+<body>
+    <main>
+        <div class="box1">
+                <h1 class="pageTitle">About</h1>
+                <center>
+                <p>I am a transplant from Northern Indiana, and have recently started calling NKY home.
+                <br>A great deal of my time is spent admiring the architechture and the history of this area;
+                <br>it's so incredibly different from back home.
+                <br>I created this page as a way to display my favorite pieces of NKY.</p>
+                </center>
+        </div>
+    </main>
+</body>
 
-    <script>
-        function myFunction() {
-  var x = document.getElementById("myLinks");
+<script>
+    function myFunction() {
+  var x = document.getElementById("mainHeader");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
+    }
   }
-}
-    </script>
-    </body>
+</script>
+
+<footer>
+    <p>NEWPORT, KY &copy; 2022 -- J HART</p>
+</footer>
 
 </html>
