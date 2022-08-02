@@ -48,4 +48,7 @@ JavaScript Features:
 1. Contact Us form: see "Contact" page & line #142 in styles.css
 
 xx2. Array to sort images by tagxx (maybe in the near future)
+-------------------------------------------------------------------------------------------------------------------------
+Note:
+I switched computers at some point during this project, and I didn't think it was an issue until Git Bash sent back a warning message. Most of the key parts of my project were done on the second computer, and even after transferring them to the first PC, Git Bash didn't like it. Hence, the last batch of files was uploaded through the website. I certainly would have had significantly more commits if it weren't for my silly mistake. My only question now is WHERE were those other files pushed too? 
 
