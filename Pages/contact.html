@@ -43,25 +43,61 @@
 
                 <textarea name="message" class="form-control" placeholder="Comment, Question, or Suggestion..." row="4" required></textarea><br>
 
-                <input type="submit" onclick="concat()" class="form-control submit" value="SEND MESSAGE">
+                <input type="submit" onClick="check()" class="form-control submit" value="SEND MESSAGE">
         </form>
     </div>
 </body>
 
 <script>
+    /*function validateForm() {
+    if (!validateName() || !validateEmail()) {
+        jsShow('submit-error');
+        producePrompt('Please fix errors to submit.', 'submit-error', 'red');
+        setTimeout(function(){jsHide('submit-error');}, 2000);
+        return false;
+    else {function concat() }
+        }
+    }   */
+
+    function check() {
+        if(!document.getElementById("subscribe-email").checkValidity()) {
+            alert("input not valid!");
+            }
+        else {
+            callMeIfValid();
+            }
+        }
+/*callMeIfValid function
+    function callMeIfValid() {
+        alert("valid input");
+        }*/
+
+/*concat function
     function concat() {
     var nameInput = document.getElementById('name').value;
     var confirm = 'Thank you, ' + nameInput + '!';
     alert(confirm);
+    }*/
+
+/*"merged" callMeIfValid & concat functions*/
+    function callMeIfValid() {
+    alert("valid input");
     }
+
+    function callMeIfValid() {
+    var nameInput = document.getElementById('name').value;
+    var valid = 'Thank you, ' + nameInput + '!';
+    alert(valid);
+        }
+
 
     function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
     x.style.display = "none";
-        } else {
+    } else {
     x.style.display = "block";
-        }
+    }
     } 
 </script>
 
