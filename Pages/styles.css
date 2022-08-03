@@ -19,6 +19,12 @@ body {
   background-repeat: repeat;
 }
 
+h1, h2, h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+
 .button1 {
   background-color: #b13b0d;
   color: white;
@@ -56,13 +62,7 @@ article {
 /*Top Menu*/
 
 .topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-  height: 40px;
-  width: 100%;
-  margin: 2px;
-  padding: 5px
+  display: none;
 }
 
 .topnav #myLinks {
@@ -118,7 +118,7 @@ nav>ul>li a {
   padding: 16px;
   text-decoration: none;
   font-weight: bold;
-  font-size: larger;
+  font-size: auto;
   }
   
 
@@ -134,9 +134,8 @@ nav>ul>li a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 40px;
   overflow-wrap: break-word;
-  color: rgb(255, 255, 255);
   }
 
  /*Contact*/
@@ -207,15 +206,20 @@ input {
 
 input:valid {
   border-color: green;
-}
+  }
 
 input:invalid {
   border-color: red;
-}
+  }
 
 input:focus:invalid {
     border-color: black;
-}
+  }
+
+input:required,
+textarea:required {
+  border-style: dashed;
+  }
 
 form .submit {
   background: darkred;
@@ -236,6 +240,22 @@ form .submit:hover {
 
 /*photos*/
 
+.box2 {
+  box-shadow: #000000;
+  background-color: rgba(0,0,0,.8);
+  color: #ffff;
+  width: 80%;
+  margin: 10px 20px 10px 100px;
+  padding: 10px 10px 10px 100px;
+  text-align: center;
+  display: flex;
+  flex-shrink: inherit;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  overflow-wrap: break-word;
+}
+
 .grid-container {
   display: contents;
   flex-direction: column;
@@ -247,9 +267,13 @@ form .submit:hover {
 .responsive-image {
   margin: 5px;
   width: 100%;
-  } 
+  }
 
-/*.col-1 {width: 75%;}
+  img:hover{
+    filter: grayscale(100%);
+ }
+
+.col-1 {width: 75%;}
 .col-2 {width: 50%;}
 .col-3 {width: 50%;}
 .col-4 {width: 80%;}
@@ -260,7 +284,7 @@ form .submit:hover {
 .col-9 {width: 75%;}
 .col-10 {width: 80%;}
 .col-11 {width: 80%;}
-.col-12 {width: 70%;}*/
+.col-12 {width: 70%;}
 
 /*Media Queries*/
 /*Desktop*/
@@ -287,10 +311,32 @@ form .submit:hover {
   display: none;
 }
 
+.topnav {
+  display: block;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 2px;
+  padding: 5px
+}
+
 
 /*Tablet*/
 @media only screen and (min-width: 992px) {
   
+  .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin: 2px;
+    padding: 5px
+  }
+
   .responsive-image {
     width: 100%;
     } 
@@ -301,6 +347,7 @@ form .submit:hover {
 
   .icon {
     display: inline;
+    position: absolute;
   }
 
   /*Footer*/
