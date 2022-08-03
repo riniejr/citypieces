@@ -205,6 +205,18 @@ input {
   height: 45px;
   }
 
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:focus:invalid {
+    border-color: black;
+}
+
 form .submit {
   background: darkred;
   border-color: transparent;
